@@ -1,137 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | CV Style</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- 
-        STEP 1: THE CONTAINER
-        We wrap everything in a 'cv-container' to control the maximum width
-        and center the content on the screen.
-    -->
-    <div class="cv-container">
-      <!-- 
-            STEP 2: THE HEADER (Identity & Contact)
-            Use a <header> tag for the top section. 
-            This usually contains your name, role, and ways to reach you.
-        -->
-      <header class="cv-header">
-        <div class="header-content">
-          <h1 class="name">Aurelia S.</h1>
-          <div class="header-top">
-            <p class="role">Murid Teknik Komputer dan Jaringan</p>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/aurelias1909-ui">GitHub</a> /
-            <a href="https://aurelia.my.id">Portfolio</a>
-          </div>
-        </div>
-        <div class="contact-info">
-          <p>aurelias1909@gmail.com</p>
-          <p>Sidoarjo, Indonesia</p>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Aurelia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- 
-            STEP 3: THE MAIN CONTENT
-            Use the <main> tag for the unique content of this page.
-            Each major part of your CV should be inside a <section>.
-        -->
-      <main class="cv-main">
-        <!-- STEP 4: EXPERIENCE SECTION (Detailed content) -->
-        <section class="cv-section">
-          <h2 class="section-title">Tentang Saya</h2>
-          <div class="experience-item">
-            <div class="item-header"></div>
-            <p class="item-desc">
-             Saya adalah murid kelas 11 jurusan TKJ yang baru terjun kedunia teknologi
-            dan sedang mempelajari pembuatan website 
-             menggunakan HTML, CSS , dan GitHub 
-            </p>
-          </div>
-        </section>
+<div class="container">
 
-        <!-- STEP 5: PROJECTS SECTION (Proof of skills) -->
-        <section class="cv-section">
-          <h2 class="section-title">Pengalaman Berorganisasi</h2>
-          <div class="project-list">
-            <div class="project-item">
-              <h3 class="item-title">
-                <a
-                  href="https://github.com/thoriqnf/revou-masterclass-first-porto"
-                  >Sekretaris OSIS </a
-                >
-              </h3>
-              <p class="item-desc">
-                Sebagai Sekertaris, saya bertugas mengelola administrasi, surat-menyurat, dan penyusunan proposal serta laporan pertanggungjawaban (LPJ) secara sistematis untuk memastikan kelancaran agenda sekolah.
-              </p>
-            </div>
-            <div class="project-item">
-              <h3 class="item-title"><a href="#">Pradana Putri Pramuka</a></h3>
-              <p class="item-desc">
-                Sebagai Pradana Putri, saya bertugas memimpin perencanaan strategis dan pelaksanaan kegiatan Pramuka putri, fokus pada pengambilan keputusan, manajemen risiko, serta pembinaan kedisiplinan anggota.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <!-- 
-                STEP 6: COLUMN LAYOUT (Expertise & Education)
-                We use an 'inline-sections' class here which will be 
-                transformed into a 2-column grid in CSS later.
-            -->
-        <section class="cv-section inline-sections">
-          <div class="sub-section">
-            <h2 class="section-title">Skills</h2>
-            <ul class="skills-list">
-              <li>Basic Linux</li>
-              <li>Basic Networking</li>
-            </ul>
-          </div>
-          <div class="sub-section">
-            <h2 class="section-title">Pendidikan</h2>
-            <div class="education-item">
-              <h3 class="item-title">Teknik Komputer dan Jaringan</h3>
-              <p class="item-org">SMK YPM 1 Taman, 2024-Sekarang</p>
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <!-- 
-            STEP 7: THE FOOTER
-            A simple <footer> to close the page with a copyright notice.
-        -->
-      <footer class="cv-footer">
-        <p>
-          &copy; 2026 Thoriq Nur Faizal. Personal Portfolio for RevoU Webinar.
-        </p>
-      </footer>
+  <!-- HEADER -->
+  <div class="card header">
+    <img src="aurel" class="profile-img">
+    <div>
+      <h1>Aurelia S.</h1>
+      <p>Murid Teknik Komputer & Jaringan</p>
     </div>
+  </div>
 
-    <!-- 
-        STEP 15: THE TOGGLE BUTTON (Floating)
-        We move the button here so it can stay "fixed" to the 
-        bottom right corner of the screen.
-    -->
-    <button id="theme-toggle" class="theme-btn" aria-label="Toggle Dark Mode">
-      Theme
-    </button>
+  <!-- ABOUT -->
+  <div class="card">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya adalah murid kelas 11 TKJ yang sedang belajar HTML, CSS, dan GitHub
+      untuk menjadi web developer.
+    </p>
+  </div>
 
-    <!-- 
-        STEP 17: ADDING THE SCRIPT
-        We link our JavaScript file at the bottom so it loads 
-        after the HTML is ready.
-    -->
-    <script src="script.js"></script>
-  </body>
+  <!-- EXPERIENCE -->
+  <div class="card">
+    <h2>Pengalaman</h2>
+    <p><b>Sekretaris OSIS</b> - Mengelola administrasi dan proposal</p>
+    <p><b>Pradana Putri Pramuka</b> - Memimpin kegiatan dan anggota</p>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="card">
+    <h2>Skills</h2>
+    <ul>
+      <li>Basic Linux</li>
+      <li>Basic Networking</li>
+      <li>HTML & CSS</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
 </html>
